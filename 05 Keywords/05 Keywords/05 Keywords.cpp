@@ -52,6 +52,7 @@ int main()
 
 
 		cout << "Welcome to Jumble! The scramble word guessing game!" << endl;
+		cout << " You win once you successfully guess a word 3 times " << endl;
 		cout << "Guess the word the jumbled version" << endl;
 
 
@@ -83,6 +84,10 @@ int main()
 			if (guess == "h")
 			{
 				cout << theHint << endl;
+			}
+			if (guess == "q")
+			{
+				return 0;
 			}
 			if (guess != theWord && guess != "q" & guess != "h")
 			{
